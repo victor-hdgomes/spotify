@@ -1,0 +1,204 @@
+/*UNIVERSAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*COLOCAR O BACKGROUND FIXO*/
+body{
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+}
+
+
+/*DEIXAR A BARRA DE NAVEGAÇÃO COM MENU TRANSPARENTE*/
+nav.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/*DEIXAR O CONTEUDO DA .NAV-PRINCIPAL BRANCO*/
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+/*DEIXAR O CONTEUDO DA .NAV-PRINCIPAL MEIO QUE VERDE NO :HOVER*/
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #9bf0e1;
+}
+
+/*COLOCAR BORDA BRANCA NO HAMBURGUER*/
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/*DIVISOR DOS LINKS DE NAVEGAÇÃO*/
+.divisor{
+    width: 1px;
+    background: rgb(255, 255, 255);
+    margin: 12px 15px;
+}
+
+/*CENTRALIZAR O CONTEUDO PRINCIPAL*/
+html,
+body,
+#home{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*CENTRALIZAR O CONTEUDO PRINCIPAL DO SITE*/
+.capa{
+    text-align: center;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo{
+    background: #7c26f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background: white;
+    color: black;
+}
+
+/*EDITANDO TITULOS E PARAGRAFOS*/
+h1{
+    font-weight: 900px;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 575.98px) {
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 5em;
+    }
+}
+
+/*BACGROUND DO CONTEUDO*/
+#servicos{
+    padding: 20px 0;
+    background: white;
+}
+
+/*ESPAÇAMENTO DOS ALBUNS*/
+.albuns{
+    padding: 10px 0;
+}
+
+/*EDITANDO PARAGRAFOS E TITULOS*/
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#servicos h2,
+#servicos h3{
+    color: #7c25f8;
+}
+
+#recursos{
+    padding: 20px 0;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+#recursos p,
+#recursos h2{
+    color: white;
+}
+
+/*ROTACIONAR AS IMAGENS*/
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/*FOOTER*/
+footer{
+    padding: 50px 0 20px 0;
+    background: black;
+    position: relative;
+}
+
+footer h4{
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer ul.sociais{
+    list-style: none;
+}
+
+footer ul.sociais li{
+    float: right;
+    margin-left: 15px;
+}
